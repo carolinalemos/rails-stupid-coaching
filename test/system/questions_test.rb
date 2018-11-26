@@ -28,7 +28,7 @@ class QuestionsTest < ApplicationSystemTestCase
   end
   test "asking question yields another grumpy response" do
     visit ask_url
-    fill_in "question", with: "?"
+    fill_in "question", with: "aaa?"
     click_on "Ask"
 
     assert_text "Silly question, get dressed and go to work!"
